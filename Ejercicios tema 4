@@ -1,0 +1,52 @@
+package Proyectos.Ejerciciosopenboot;
+import java.util.Scanner;
+
+public class Ejercicio4 {
+    public static void main(String[] args){
+        int numeroif=2;
+        if (numeroif == 0){
+            System.out.println("El número es 0");
+        } else if (numeroif>0){
+            System.out.println("El número es mayor que 0");
+        } else {
+            System.out.println("El número es menor que 0");
+        } 
+        System.out.println("Fin de la primera parte");
+        int numWhile=0;
+        while (numWhile<3){
+            System.out.println(numWhile);
+            numWhile=numWhile+1;
+        }
+        System.out.println("Fin de la segunda parte");
+        int numdo=2;
+        do {
+            System.out.println(numdo);
+            numdo=numdo+1;
+        } while (numdo<3);
+        System.out.println("Fin de la tercera parte");
+        for (int numerofor=0; numerofor<3; numerofor=numerofor+1){
+            System.out.println(numerofor);  
+        } System.out.println("Fin de la cuarta parte");
+        System.out.println("Escribe un número");
+        Scanner sc=new Scanner(System.in);
+        int estacion=sc.nextInt();
+
+        switch(estacion){
+            case 1:
+                System.out.println("1 es invierno");
+                break;
+            case 2:
+                System.out.println("2 es primavera");
+                break;
+            case 3:
+                System.out.println("3 es verano");
+                break;
+            case 4:
+                System.out.println("4 es otoño");
+                break;
+            default:
+            System.out.println("No es ninguna estación");
+    }
+    System.out.println("Fin del ejercicio");      
+}
+}
